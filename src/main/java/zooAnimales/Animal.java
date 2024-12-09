@@ -22,10 +22,6 @@ public class Animal {
         totalAnimales++;
     }
 
-    public String movimiento() {
-        return "desplazarse";
-    }
-
     public static String totalPorTipo() {
         return "Mamíferos: " + Mamifero.cantidadMamiferos() + "\n" +
                "Aves: " + Ave.cantidadAves() + "\n" +
@@ -40,12 +36,13 @@ public class Animal {
                 ", habito en " + habitat + " y mi género es " + genero;
         if (zona != null) {
             resultado += ", la zona en la que me ubico es " + zona.getNombre() +
-                         ", en el " + zona.getZoo().getNombre();
+                         ", en el zoológico " + zona.getZoo().getNombre();
         }
         return resultado;
     }
 
-    // Getters y Setters
+    // Métodos y Setters / Getters
+
     public static int getTotalAnimales() {
         return totalAnimales;
     }
@@ -94,3 +91,4 @@ public class Animal {
         this.zona = zona;
     }
 }
+
