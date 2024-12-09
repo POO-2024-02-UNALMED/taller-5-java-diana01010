@@ -19,7 +19,6 @@ public class Zoologico {
 
     public void agregarZonas(Zona zona) {
         zonas.add(zona);
-        zona.setZoo(this);  // Asegura que la zona se vincule al zoológico
     }
 
     public int cantidadTotalAnimales() {
@@ -55,4 +54,5 @@ public class Zoologico {
         this.zonas = zonas;
     }
 }
+
 

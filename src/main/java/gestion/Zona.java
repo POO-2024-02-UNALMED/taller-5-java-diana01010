@@ -21,7 +21,6 @@ public class Zona {
 
     public void agregarAnimales(Animal animal) {
         animales.add(animal);
-        animal.setZona(this);  // Asegura que el animal se vincule con la zona
     }
 
     public int cantidadAnimales() {
@@ -53,3 +52,4 @@ public class Zona {
         this.animales = animales;
     }
 }
+

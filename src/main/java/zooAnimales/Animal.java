@@ -22,6 +22,10 @@ public class Animal {
         totalAnimales++;
     }
 
+    public String movimiento() {
+        return "desplazarse";
+    }
+
     public static String totalPorTipo() {
         return "Mamiferos: " + Mamifero.cantidadMamiferos() + "\n" +
                "Aves: " + Ave.cantidadAves() + "\n" +
@@ -33,16 +37,15 @@ public class Animal {
     @Override
     public String toString() {
         String resultado = "Mi nombre es " + nombre + ", tengo una edad de " + edad + 
-                ", habito en " + habitat + " y mi género es " + genero;
+                ", habito en " + habitat + " y mi genero es " + genero;
         if (zona != null) {
             resultado += ", la zona en la que me ubico es " + zona.getNombre() +
-                         ", en el zoológico " + zona.getZoo().getNombre();
+                         ", en el " + zona.getZoo().getNombre();
         }
         return resultado;
     }
 
-    // Métodos y Setters / Getters
-
+    // Getters y Setters
     public static int getTotalAnimales() {
         return totalAnimales;
     }
@@ -91,4 +94,5 @@ public class Animal {
         this.zona = zona;
     }
 }
+
 
